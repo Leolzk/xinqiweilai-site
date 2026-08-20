@@ -1,0 +1,7 @@
+/** 活体蓝图设备页：在专业留白中呈现培养、观察和分析节点的设备支持逻辑。 */
+import { Eye, ScanSearch, Settings2 } from "lucide-react";
+import { ServiceHero } from "@/components/ServiceHero";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { serviceCopy } from "@/lib/futureMindContent";
+
+export default function Equipment() { const { language } = useLanguage(); const zh = language === "zh"; const nodes = [[Settings2, zh ? "培养支持" : "Culture support", zh ? "围绕稳定培养条件衔接关键设备节点。" : "Connect key equipment stages around stable culture conditions."],[Eye, zh ? "观察窗口" : "Observation window", zh ? "让样本状态与过程信息获得更清晰的可见性。" : "Give sample state and process information clearer visibility."],[ScanSearch, zh ? "分析协同" : "Analysis alignment", zh ? "连接后续研究与分析场景中的操作需求。" : "Connect operational needs across downstream research and analysis settings."]]; return <div className="service-page"><ServiceHero {...serviceCopy.equipment} code="03" /><section className="equipment-message"><p className="fm-eyebrow"><i />{zh ? "关键节点支持" : "CRITICAL STAGE SUPPORT"}</p><h2>{zh ? <>培养、观察、分析。<br /><em>每一个节点都值得被认真设计。</em></> : <>Culture. Observe. Analyze.<br /><em>Every stage deserves intentional design.</em></>}</h2></section><section className="equipment-nodes">{nodes.map(([Icon, title, desc], index) => { const I = Icon as typeof Eye; return <article key={title as string}><span>0{index + 1}</span><I size={27} /><h3>{title as string}</h3><p>{desc as string}</p></article>; })}</section></div>; }
