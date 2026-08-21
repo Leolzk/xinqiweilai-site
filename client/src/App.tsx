@@ -11,6 +11,7 @@ import { AmbientAudio } from "./components/AmbientAudio";
 import { WeChatFollow } from "./components/WeChatFollow";
 import { LanguageSwitch } from "./components/LanguageSwitch";
 import { TranslationLayer } from "./components/TranslationLayer";
+import { FontSafeCopy } from "./components/FontSafeCopy";
 import Home from "./pages/Home";
 import AIPlatform from "./pages/AIPlatform";
 import Solutions from "./pages/Solutions";
@@ -54,6 +55,7 @@ function App() {
             <AmbientAudio />
             <WeChatFollow />
             <LanguageSwitch />
+            <FontSafeCopy />
             <Router />
             <TranslationLayer />
           </TooltipProvider>
