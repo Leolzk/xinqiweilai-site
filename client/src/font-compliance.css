@@ -1,4 +1,4 @@
-/* 字体合规锁定：不加载任何网络字体；中文、英文、数字与标点仅使用设备本地宋体/黑体。 */
+/* 字体合规锁定：不加载、嵌入或请求网络字体；中文、英文、数字与标点只使用设备本地宋体/黑体。 */
 :root { --site-song: SimSun, 宋体; --site-hei: SimHei, 黑体; }
-html, body, body *, button, input, textarea, select, option { font-family:var(--site-song) !important; }
+html, body, body *, body *::before, body *::after, button, input, textarea, select, option, input::placeholder, textarea::placeholder, svg text, svg tspan { font-family:var(--site-song) !important; }
 h1, h2, h3, h4, h5, h6, button, .eyebrow, .mono-label, .section-index, .brand strong, .desktop-nav a, .mobile-nav a, .solid-button, .nav-cta, .catalog-head, .stage-number, .language-switch, .ambient-audio, .wechat-follow, .portal-readout, .portal-system-rail, .portal-enter, .portal-brand { font-family:var(--site-hei) !important; }

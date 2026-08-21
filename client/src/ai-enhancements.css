@@ -7,7 +7,7 @@
 @media (max-width:600px) { .workflow-section::before,.workflow-section::after,.catalog-section::after { display:none; }.workflow-stage:nth-child(even) .stage-body { padding-left:0; border-left:0; }.catalog-card::before { left:auto; right:18px; transform:none; }.catalog-card:nth-child(2n)::before { top:18px; bottom:auto; } }
 
 /* 字体合规：全站只使用设备自带的宋体与黑体字族，彻底移除网络商用字体依赖。 */
-:root { --fm-song: SimSun, 宋体, serif; --fm-hei: SimHei, 黑体, sans-serif; }
+:root { --fm-song: SimSun, 宋体; --fm-hei: SimHei, 黑体; }
 body, button, input, textarea, select, .site-shell, .site-shell * { font-family:var(--fm-song) !important; }
 h1,h2,h3,h4,h5,h6,.brand strong,.solid-button,.nav-cta,.desktop-nav a,.mobile-nav a,.mono-label,.eyebrow,.section-index,.ticker-track span,.catalog-head,.layer-top,.stage-number,.phone-link strong,.contact-phone-large strong { font-family:var(--fm-hei) !important; }
 
