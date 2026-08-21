@@ -42,7 +42,7 @@ export default function Portal() {
         <div className="organoid-core"><div className="core-light" /><div className="core-granules" />{cells.map((cell) => <i key={cell.index} style={{ "--angle": cell.angle, "--distance": cell.distance, "--cell-scale": cell.scale, "--cell": cell.index } as CSSProperties} />)}</div>
         <div className="pulse-ring ring-a" /><div className="pulse-ring ring-b" /><div className="pulse-ring ring-c" />
       </div>
-      <div className="portal-copy"><p><i /> INTELLIGENT ORGANOID SYSTEM</p><h1>让生命信号<br /><em>开始连接。</em></h1><span>模型 · 芯片 · 数据 · 证据</span><small>将人源生物学模型与AI工作流组织为一套可读取的实验基础设施。</small></div>
+      <div className="portal-copy"><p><i /> INTELLIGENT ORGANOID SYSTEM</p><h1>让生命信号<br /><em>开始连接。</em></h1><span>模型 · 芯片 · 数据 · 设备 · 技术</span><small>将人源生物学模型与AI工作流组织为一套可读取的实验基础设施。</small></div>
       <button className="portal-enter" type="button" onClick={enterSite} aria-label="点击进入芯启蔚来官网"><span className="enter-orbit" /><b>点击进入</b><small>ENTER THE SYSTEM</small><ArrowDownRight size={19} /></button>
     </section>
     <p className="portal-footnote">© 2026 FUTURE MIND BIOTECH · SHANGHAI</p>

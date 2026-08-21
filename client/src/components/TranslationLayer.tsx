@@ -9,6 +9,7 @@ const translation: Record<string, string> = {
 };
 
 Object.assign(translation, {
+  "模型 · 芯片 · 数据 · 设备 · 技术": "MODELS · CHIPS · DATA · EQUIPMENT · TECHNOLOGY",
   "将模型、微环境与读数路径组织为一套可持续演进的生命科学系统。": "Organize models, microenvironments, and readout pathways into an evolving life-science system.",
   "扫描二维码，获取类器官技术、产品服务与解决方案动态。": "Scan to receive updates on organoid technology, products, and integrated solutions.",
   "培养体系": "CULTURE SYSTEMS",
