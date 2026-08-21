@@ -3,6 +3,7 @@ import { type PointerEvent as ReactPointerEvent } from "react";
 import { ArrowDownRight, ArrowUpRight, ChevronDown, CircuitBoard, FlaskConical, Microscope, MoveRight, Phone, ScanLine } from "lucide-react";
 import { CellField } from "@/components/CellField";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import "./home-upgrade-notice.css";
 
 const assets = {
   logo: "/manus-storage/future-mind-logo-crop_138a4cac.png",
@@ -17,7 +18,7 @@ const services = [
   { n: "01", title: "试剂与耗材", en: "CULTURE FOUNDATIONS", icon: FlaskConical, body: "围绕建模、扩增、传代、冻存和分析所需的培养体系，构建稳定、可追溯的实验起点。", note: "从基质、培养基到定制化配套方案" },
   { n: "02", title: "类器官芯片与定制", en: "ORGANOID-ON-CHIP", icon: CircuitBoard, body: "将类器官模型与微环境控制能力整合，让流体、界面与组织行为在可编程尺度上协同。", note: "芯片设计、模型适配与功能模块定制" },
   { n: "03", title: "配套设备", en: "AUTOMATED SYSTEMS", icon: Microscope, body: "面向日常培养、成像、环境控制与批次管理的设备配置，帮助团队把复杂流程沉淀为标准。", note: "培养、监测、液体处理与工作流集成" },
-  { n: "04", title: "类器官 CEO 服务", en: "EXPERT OPERATIONS", icon: ScanLine, body: "以项目化协作连接模型建立、质控路径与结果解读，并为每个关键节点建立共同语言。", note: "面向研究目标的项目协同服务" },
+  { n: "04", title: "类器官CRO服务", en: "ORGANOID CRO SERVICE", icon: ScanLine, body: "以项目化协作连接模型建立、质控路径与结果解读，并为每个关键节点建立共同语言。", note: "面向研究目标的项目协同服务" },
 ];
 
 function tiltCard(event: ReactPointerEvent<HTMLElement>) {
@@ -38,6 +39,7 @@ export default function Home() {
         <SiteHeader />
         <div className="hero-content layout-boundary">
           <div className="hero-statement">
+            <p className="site-upgrade-notice">网站正在升级，还在完善中，敬请期待……</p>
             <p className="eyebrow"><span /> FUTURE MIND BIOTECHNOLOGY / 01</p>
             <h1>把人源生物学<br /><em>带入每一次决策。</em></h1>
             <p className="hero-lead">从类器官培养体系、器官芯片定制到实验自动化与专家协作，我们为科研、药物研发和转化医学团队建立可扩展的工作基础。</p>
