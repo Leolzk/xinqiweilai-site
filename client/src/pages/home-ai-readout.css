@@ -1,0 +1,2 @@
+/* 首页 AI 读数：保留 AI 语义，增强 A 与 I 的视觉分隔。 */
+.hero-readout .readout-number { letter-spacing:.04em; word-spacing:.3em; white-space:nowrap; }

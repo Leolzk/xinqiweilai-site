@@ -3,6 +3,7 @@ import { type PointerEvent as ReactPointerEvent } from "react";
 import { ArrowDownRight, ArrowUpRight, ChevronDown, CircuitBoard, FlaskConical, Microscope, MoveRight, Phone, ScanLine } from "lucide-react";
 import { CellField } from "@/components/CellField";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import "./home-ai-readout.css";
 import "./home-upgrade-notice.css";
 
 const assets = {
@@ -46,7 +47,7 @@ export default function Home() {
             <p className="hero-motto">启心铭志，引动未来! <span>Unlock your mind,open your future!</span></p>
             <div className="hero-actions"><a className="solid-button" href="#solutions">探索整体方案 <MoveRight size={17} /></a><a className="text-button" href="#workflow">查看技术路径 <ArrowDownRight size={17} /></a></div>
           </div>
-          <aside className="hero-readout" aria-label="类器官平台状态"><div className="readout-top"><span className="status-dot" /> LIVE SYSTEM MAP</div><div className="readout-number">AI</div><p>将模型、微环境与读数路径组织为一套可持续演进的生命科学系统。</p><div className="readout-rule"><span />FUTURE MIND ECOSYSTEM</div></aside>
+          <aside className="hero-readout" aria-label="类器官平台状态"><div className="readout-top"><span className="status-dot" /> LIVE SYSTEM MAP</div><div className="readout-number" aria-label="AI">A&nbsp;I</div><p>将模型、微环境与读数路径组织为一套可持续演进的生命科学系统。</p><div className="readout-rule"><span />FUTURE MIND ECOSYSTEM</div></aside>
         </div>
         <a className="scroll-cue" href="#solutions"><span>SCROLL TO EXPLORE</span><ChevronDown size={18} /></a>
       </section>
