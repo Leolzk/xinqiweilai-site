@@ -51,7 +51,7 @@ export default function Home() {
         <a className="scroll-cue" href="#solutions"><span>SCROLL TO EXPLORE</span><ChevronDown size={18} /></a>
       </section>
 
-      <section className="intro-band" aria-labelledby="intro-title"><div className="layout-boundary intro-layout"><p className="section-index">/ 01 — PLATFORM VIEW</p><h2 id="intro-title">让每一个模型，<br />连接到<strong>下一步证据。</strong></h2><p className="intro-note">类器官不是孤立的实验对象。源境把培养条件、芯片微环境、设备工作流和项目协作放进同一个解决方案中，为不同阶段的研究目标提供连续支持。</p></div></section>
+      <section className="intro-band" aria-labelledby="intro-title"><div className="layout-boundary intro-layout"><p className="section-index">/ 01 — PLATFORM VIEW</p><h2 id="intro-title">让每一个模型，<br />连接到<strong>下一步证据。</strong></h2><p className="intro-note">类器官不是孤立的实验对象。芯启蔚来把培养条件、芯片微环境、设备工作流和项目协作放进同一个解决方案中，为不同阶段的研究目标提供连续支持。</p></div></section>
 
       <section className="solutions-section" id="solutions" aria-labelledby="solutions-title">
         <div className="layout-boundary section-heading"><div><p className="eyebrow light"><span /> INTEGRATED SOLUTIONS / 02</p><h2 id="solutions-title">四个模块，<br /><em>一条完整路径。</em></h2></div><p>模块可独立启用，也可围绕一个具体的组织模型、疾病方向或筛选目标协同配置。</p></div>

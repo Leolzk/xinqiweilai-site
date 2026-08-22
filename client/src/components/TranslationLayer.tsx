@@ -9,6 +9,7 @@ const translation: Record<string, string> = {
 };
 
 Object.assign(translation, {
+  "类器官不是孤立的实验对象。芯启蔚来把培养条件、芯片微环境、设备工作流和项目协作放进同一个解决方案中，为不同阶段的研究目标提供连续支持。": "Organoids are not isolated experimental objects. Future Mind brings culture conditions, chip microenvironments, equipment workflows, and project collaboration into one continuous solution for each research stage.",
   "网站正在升级，还在完善中，敬请期待……": "Website upgrades are in progress. More to come.",
   "类器官CRO服务": "ORGANOID CRO SERVICE",
   "模型 · 芯片 · 数据 · 设备 · 技术": "MODELS · CHIPS · DATA · EQUIPMENT · TECHNOLOGY",
