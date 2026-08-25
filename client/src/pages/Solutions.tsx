@@ -1,15 +1,38 @@
 /** 活体星图设计系统：解决方案页沿实验路径向下展开，强调每个模块是同一基础设施的一段。 */
+
+
+
 import { ArrowUpRight, Beaker, CircuitBoard, FlaskConical, Microscope, ScanLine } from "lucide-react";
+
 import { CellField } from "@/components/CellField";
+
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
+
+
 const stages = [
+  
   { n: "01", title: "模型基础", en: "MODEL FOUNDATION", icon: FlaskConical, description: "以适合研究目标的培养体系、试剂耗材与过程条件，为类器官建模建立一致的实验起点。", tags: ["培养体系", "试剂耗材", "模型建立"] },
+  
   { n: "02", title: "微环境设计", en: "MICROENVIRONMENT DESIGN", icon: CircuitBoard, description: "把类器官模型与微流控芯片、界面和动态培养条件相连接，形成面向功能观察的可控微环境。", tags: ["类器官芯片", "定制开发", "多参数控制"] },
+  
   { n: "03", title: "系统化运行", en: "SYSTEM OPERATIONS", icon: Microscope, description: "围绕培养、成像、监测与数据归档的关键节点配置设备和流程，让复杂操作沉淀为稳定运行能力。", tags: ["配套设备", "自动化协同", "过程监测"] },
-  { n: "04", title: "专家协同交付", en: "EXPERT COLLABORATION", icon: ScanLine, description: "以项目为单位组织方案、操作、质控和结果解读，让模型、设备和数据在同一交付语境中协同。", tags: ["CEO服务", "项目协作", "结果解读"] },
+  
+  { n: "04", title: "专家协同交付", en: "EXPERT COLLABORATION", icon: ScanLine, description: "以项目为单位组织方案、操作、质控和结果解读，让模型、设备和数据在同一交付语境中协同。", tags: ["CRO服务", "项目协作", "结果解读"] },
+  
 ];
 
+
+
 export default function Solutions() {
-  return <main className="site-shell solutions-page"><section className="page-hero solutions-hero"><CellField /><img className="page-hero-visual solution-hero-visual" src="/manus-storage/future-mind-solutions-hero_b0f0762d.png" alt="类器官芯片与微流控培养系统" /><div className="solution-mesh" aria-hidden="true" /><SiteHeader /><div className="layout-boundary solution-hero-content"><p className="eyebrow"><span /> INTEGRATED ORGANOID SOLUTIONS / 01</p><h1>从模型建立，<br /><em>到下一步证据。</em></h1><p className="page-lead">芯启蔚来围绕类器官研发的实际节点，组织试剂耗材、芯片定制、配套设备、AI智能化能力与项目协作，让每一个模块都连接到同一条实验路径。</p><div className="hero-ai-readout"><span><i /> MODEL / INPUT</span><span><i /> FLOW / CONTROL</span><span><i /> DATA / EVIDENCE</span></div></div></section><section className="workflow-section"><div className="layout-boundary workflow-intro"><p className="section-index">/ 02 — THE CONTINUOUS PATH</p><h2>不是四项产品，<br />而是<strong>一条工作流。</strong></h2><p>每一个阶段都可以独立启用，也可以被组织为一个连续的整体解决方案。</p></div><div className="workflow-stages">{stages.map((stage) => { const Icon = stage.icon; return <article className="workflow-stage" key={stage.n}><div className="stage-number"><span>{stage.n}</span><i /></div><div className="stage-icon"><Icon size={26} strokeWidth={1.25} /></div><div className="stage-body"><p className="mono-label">{stage.en}</p><h3>{stage.title}</h3><p>{stage.description}</p><div>{stage.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div><a href="tel:02151869862" aria-label={`咨询${stage.title}`}><ArrowUpRight size={20} /></a></article>; })}</div></section><section className="solution-proof"><div className="layout-boundary proof-grid"><div><p className="eyebrow"><span /> INTELLIGENCE AS A LAYER / 03</p><h2>让AI参与连接，<br /><em>让证据回到决策。</em></h2></div><p>AI智能化不是独立的“功能岛”，而是贯穿模型状态、设备读数、过程数据和协作节点的连接层。它让团队能够在复杂的实验推进中保留清晰的上下文。</p><a className="line-link" href="/ai-platform">查看AI智能平台 <ArrowUpRight size={17} /></a></div></section><section className="page-close"><div className="layout-boundary page-close-inner"><p className="eyebrow"><span /> BUILD YOUR PATH</p><h2>从您的研究问题开始，<br /><em>组织一条完整路径。</em></h2><a className="solid-button" href="tel:02151869862">发起技术交流 <ArrowUpRight size={17} /></a></div></section><SiteFooter /></main>;
+  
+  return <main className="site-shell solutions-page"><section className="page-hero solutions-hero"><CellField /><img className="page-hero-visual solution-hero-visual" src="/manus-storage/future-mind-solutions-hero_b0f0762d.png" alt="类器官芯片与微流控培养系统" /><div className="solution-mesh" aria-hidden="true" /><SiteHeader /><div className="layout-boundary solution-hero-content"><p className="eyebrow"><span /> INTEGRATED ORGANOID SOLUTIONS / 01</p>p><h1>从模型建立，<br /><em>到下一步证据。</em>em></h1>h1><p className="page-lead">芯启蔚来围绕类器官研发的实际节点，组织试剂耗材、芯片定制、配套设备、AI智能化能力与项目协作，让每一个模块都连接到同一条实验路径。</p>p><div className="hero-ai-readout"><span><i /> MODEL / INPUT</span>span><span><i /> FLOW / CONTROL</span>span><span><i /> DATA / EVIDENCE</span>span></div>div></div>div></section>section><section className="workflow-section"><div className="layout-boundary workflow-intro"><p className="section-index">/ 02 — THE CONTINUOUS PATH</p>p><h2>不是四项产品，<br />而是<strong>一条工作流。</strong>strong></h2>h2><p>每一个阶段都可以独立启用，也可以被组织为一个连续的整体解决方案。</p>p></div>div><div className="workflow-stages">{stages.map((stage) => { const Icon = stage.icon; return <article className="workflow-stage" key={stage.n}><div className="stage-number"><span>{stage.n}</span>span><i /></div>div><div className="stage-icon"><Icon size={26} strokeWidth={1.25} /></div>div><div className="stage-body"><p className="mono-label">{stage.en}</p>p><h3>{stage.title}</h3>h3><p>{stage.description}</p>p><div>{stage.tags.map((tag) => <span key={tag}>{tag}</span>span>)}</div>div></div>div><a href="tel:02151869862" aria-label={`咨询${stage.title}`}><ArrowUpRight size={20} /></a>a></article>article>; })}</div>div></section>section><section className="solution-proof"><div className="layout-boundary proof-grid"><div><p className="eyebrow"><span /> INTELLIGENCE AS A LAYER / 03</p>p><h2>让AI参与连接，<br /><em>让证据回到决策。</em>em></h2>h2></div>div><p>AI智能化不是独立的“功能岛”，而是贯穿模型状态、设备读数、过程数据和协作节点的连接层。它让团队能够在复杂的实验推进中保留清晰的上下文。</p>p><a className="line-link" href="/ai-platform">查看AI智能平台 <ArrowUpRight size={17} /></a>a></div>div></section>section><section className="page-close"><div className="layout-boundary page-close-inner"><p className="eyebrow"><span /> BUILD YOUR PATH</p>p><h2>从您的研究问题开始，<br /><em>组织一条完整路径。</em>em></h2>h2><a className="solid-button" href="tel:02151869862">发起技术交流 <ArrowUpRight size={17} /></a>a></div>div></section>section><SiteFooter /></main>main>;
+  
 }
+
+</main>
+
+
+
+
+
