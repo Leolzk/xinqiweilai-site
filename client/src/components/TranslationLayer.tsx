@@ -23,7 +23,7 @@ Object.assign(translation, {
   "多参数控制": "MULTI-PARAMETER CONTROL",
   "自动化协同": "AUTOMATION COORDINATION",
   "过程监测": "PROCESS MONITORING",
-  "CRO服务": "CEO SERVICE",
+  "CRO服务": "CRO SERVICE",
   "项目协作": "PROJECT COLLABORATION",
   "结果解读": "RESULTS INTERPRETATION",
   "从您的研究问题开始，": "Start with your research question,",
